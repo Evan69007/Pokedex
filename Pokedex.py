@@ -49,6 +49,17 @@ def filter_by_weight():
 	return (filtered_list)
 
 
-print(filter_by_weight())
+# print(filter_by_weight())
+
+
+def get_all_evolutions(pokemon):
+	evolutions = []
+	for i in pokemon['next_evolution']:
+		evolutions.append(i['name'])
+	if (len(evolutions) == 0):
+		return ("Pas d'évolutions")
+	return (evolutions)
+
+# print(get_all_evolutions(data['pokemon'][0]))
 
 f.close()
