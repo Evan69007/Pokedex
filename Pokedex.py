@@ -11,7 +11,7 @@ def calculate_nb_pokemon():
 		nb_pokemon += 1
 	return nb_pokemon
 
-# print(calculate_nb_pokemon())
+# print(calculate_nb_pokemon(), "pokemon in the pokedex")
 
 def nb_pokemon_weight_more_10kg():
 	nb_pokemon_weight_more_10kg = 0
@@ -21,7 +21,7 @@ def nb_pokemon_weight_more_10kg():
 			nb_pokemon_weight_more_10kg += 1
 	return (nb_pokemon_weight_more_10kg)
 
-# print(nb_pokemon_weight_more_10kg())
+# print(nb_pokemon_weight_more_10kg(), "pokemon with a weight of more than 10 Kg")
 
 
 def dict_to_tuple():
@@ -54,12 +54,19 @@ def filter_by_weight():
 
 def get_all_evolutions(pokemon):
 	evolutions = []
-	for i in pokemon['next_evolution']:
-		evolutions.append(i['name'])
+	if "next_evolution" in pokemon:
+		for i in pokemon['next_evolution']:
+			evolutions.append(i['name'])
 	if (len(evolutions) == 0):
 		return ("Pas d'évolutions")
 	return (evolutions)
 
-# print(get_all_evolutions(data['pokemon'][0]))
+
+# nb_pokemon = 0
+# evolutions = get_all_evolutions(data['pokemon'][nb_pokemon])
+# if type(evolutions) == type([]):
+# 	print(data['pokemon'][nb_pokemon]['name'] + "'s evolutions are", ' and '.join(evolutions))
+# else:
+# 	print(data['pokemon'][nb_pokemon]['name'] + " has no evolutions")
 
 f.close()
