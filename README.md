@@ -35,8 +35,12 @@
 - Pillow (pour la gestion des images)
 - Requests (pour récupérer les images depuis les URL)
 
+<br>
+
 ##  Vous pouvez installer les bibliothèques nécessaires avec :
     pip install pillow requests
+
+<br>
 
 ## **Comment utiliser:**
 
