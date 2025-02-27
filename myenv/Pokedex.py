@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 import requests
 from io import BytesIO
 
-f = open('C:/ADA/Ada_Tech_School/Exercices_individuels/Pokedex/myenv/pokedex.json')
+f = open('myenv/pokedex.json')
 data = json.load(f)
 
 def calculate_nb_pokemon():
