@@ -175,7 +175,7 @@ name_frame.grid(row=0, column=0)
 ### Picture Frame
 picture_frame = tk.Frame(window, relief=tk.SUNKEN, borderwidth=2)
 show_image_from_url(data['pokemon'][index]['img'])
-picture_frame.grid(row=1, column=0, rowspan=2, sticky="ns")
+picture_frame.grid(row=1, column=0)
 
 ### Type Frame
 type_frame = tk.Frame(window, relief=tk.RAISED, borderwidth=2)
