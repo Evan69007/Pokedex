@@ -43,7 +43,7 @@
 ### 1. Clonez ce dépôt ou téléchargez les fichiers.
 ### 2. Assurez-vous d'avoir Python installé ainsi que les bibliothèques nécessaires (Pillow, requests).
 ### 3. Ouvrez Pokedex.py et exécutez-le pour démarrer l'application Pokedex grace à cette commande:
-    python.exe Pokedex.py
+    python.exe myenv/Pokedex.py
 ### 4. L'application ouvrira une fenêtre graphique affichant un Pokémon et ses détails. Vous pouvez :
 
 - Utiliser les boutons "Précédent" et "Suivant" pour naviguer entre les Pokémon.
